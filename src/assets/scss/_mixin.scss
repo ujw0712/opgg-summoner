@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+@mixin flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-center-center-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@mixin flex-center-start {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+@mixin flex-center-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-center-end {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+@mixin flex-between-start {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+@mixin flex-between-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flex-between-end {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+@mixin flex-start-center {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@mixin flex-end-center {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+@mixin game-item {
+  width: 22px;
+  height: 22px;
+  border-radius: 3px;
+  margin-top: 2px;
+}
+
+@mixin game($border, $background, $separator, $result, $no-item, $more-border, $more-background) {
+  border: solid 1px $border;
+  background-color: $background;
+  .separator-v {
+    width: 27px;
+    border-bottom: 1px solid $separator;
+  }
+  .result {
+    font-weight: bold;
+    color: $result;
+  }
+  .item {
+    @include flex-wrap;
+    .no-item {
+      @include game-item;
+      background-color: $no-item;
+    }
+  }
+  .more {
+    border: solid 1px $more-border;
+    background-color: $more-background;
+  }
+}
+
+@mixin kda-badge($border, $background) {
+  padding: 3px 5px;
+  border-radius: 9px;
+  border: solid 1px $border;
+  background-color: $background;
+  font-size: 10px;
+  color: $white-two;
+}

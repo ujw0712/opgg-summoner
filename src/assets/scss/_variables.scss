@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+$assetPath : '~@/assets/img/';
+
+$azure: #1ea1f7;
+$bluish: #1f8ecd;
+$ugly-blue: #2c709b;
+$cool-blue: #549dc7;
+$perrywinkle: #7fb0e1;
+$coral: #ee5a52;
+$reddish: #c6443e;
+$reddish-two: #bf3b36;
+$tomato: #ec4f48;
+$scarlet: #d0021b;
+$white: #eaeaea;
+$white-two: #ffffff;
+$white-three: #d8d8d8;
+$white-four: #f2f2f2;
+$white-five: #ededed;
+$warm-grey: #727272;
+$warm-grey-two: #999999;
+$warm-grey-three: #948e8d;
+$warm-purple: #7f3590;
+$amethyst: #8c51c5;
+$silver-three: #cdd2d2;
+$charcoal: #242929;
+$slate-grey: #657070;
+$sandy: #f6e08f;
+$dull-orange: #ca9a2c;
+$yellow-ochre: #e19205;
+$dark: #2c3548;
+$dark-grey: #353a3a;
+$silver: #e0e3e3;
+$silver-two: #d0d3d4;
+$silver-three: #cdd2d2;
+$slate-grey: #657070;
+$gunmetal: #555e5e;
+$pinkish-grey: #d6b5b2;
+$pinkish-grey-two: #c0aba8;
+$pinkish-grey-three: #d0a6a5;
+$pinkish-grey-four: #cb9e9a;
+$brownish-pink: #c8817c;
+$pinkish-tan: #e89c95;
+$brownish-grey: #5e5e5e;
+$brownish-grey-two: #666666;
+$light-blue-grey: #b0ceea;
+$light-grey-blue: #a1b8cd;
+$light-grey-blue-two: #94b9d6;
+$greyblue: #7aa5c3;
+$greyish: #b6b6b6;
+$greyish-two: #a7a7a7;
+$greyish-brown: #555555;
+$black: #333333;
+$black-two: #000000;
+$bluey-green: #2daf7f;
+
+$item-name: #00cfbc;
+$item-price: #ffc659;
+
+
+@function safe-rgb($color) {
+    @return unquote("rgb(#{red($color)}, #{green($color)}, #{blue($color)})");
+}
